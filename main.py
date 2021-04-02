@@ -18,7 +18,7 @@ def predictionExistingUser():
         pass
     return ""
 
-@app.route('/NewUserPrediction'methods = ['GET'])
+@app.route('/NewUserPrediction',methods = ['GET'])
 def predictionNewUser():
     pr.predictRatings()
     try:
