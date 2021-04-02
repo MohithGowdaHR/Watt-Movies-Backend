@@ -11,16 +11,18 @@ def init():
 
 @app.route('/ExistingUserPrediction')
 def predictionExistingUser():
+    pp.predictPlot()
     try:
-         pp.predictPlot()
+         pass
     except :
         pass
     return ""
 
 @app.route('/NewUserPrediction')
 def predictionNewUser():
+    pr.predictRatings()
     try:
-        pr.predictRatings()
+        pass
     except :
         pass
     return ""
