@@ -73,10 +73,13 @@ def predictRatings():
       mycursor = mydb.cursor()
 
       sql = "INSERT INTO user_predictions (user_id, sg_movie_id_1) VALUES (%s, %s)"
-      val = (clients_pred+1, suggested_movie1)
+      val = (str(clients_pred+1), str(suggested_movie1))
       mycursor.execute(sql, val)
 
       mydb.commit()
       print(mycursor.rowcount, "record inserted.")
   else:
     print("No new suggestions necessary.")
+  
+
+#predictRatings()

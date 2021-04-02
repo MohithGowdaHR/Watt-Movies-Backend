@@ -92,3 +92,7 @@ def predictPlot():
 
   mydb.commit()
   print("Recommendations updated for user ",user)
+
+
+
+#predictPlot()
